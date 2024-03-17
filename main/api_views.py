@@ -6,6 +6,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from django.http import HttpResponseRedirect
 from rest_framework import status
+
 class ShortURLListCreateView(generics.ListCreateAPIView):
     queryset = ShortURL.objects.all()
     serializer_class = ShortURLSerializer
